@@ -63,7 +63,7 @@ Once you have the dependencies installed, you can run the script from your termi
 python semantic_search.py "your search question here"
 ```
 
-Replace `\"your search question here\"` with the question you want to search for in the issues. For example:
+Replace `"your search question here"` with the question you want to search for in the issues. For example:
 
 ```bash
 python semantic_search.py "How to use transformers for text classification?"
@@ -73,11 +73,11 @@ python semantic_search.py "How to use transformers for text classification?"
 
 - `--save`:  This argument allows you to save the embeddings dataset to disk. This is useful if you want to reuse the dataset later without re-computing the embeddings.
   ```bash
-  python semantic_search.py \"your search question here\" --save
+  python semantic_search.py "your search question here" --save
   ```
 - `--load`: This argument allows you to load a previously saved embeddings dataset from disk. If you use this argument, the script will load the embeddings from disk instead of computing them again.
   ```bash
-  python semantic_search.py \"your search question here\" --load
+  python semantic_search.py "your search question here" --load
   ```
 
 The script will output the top 5 most relevant comments, along with their scores, titles, and URLs, based on your search question.
