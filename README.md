@@ -13,35 +13,15 @@
 
 Before running the `create_dataset.py` script, ensure you have Python installed and the required libraries: `requests`, `pandas`, `datasets`, and `tqdm`. You can install these using pip:
 
-```bash
+```
 pip install requests pandas datasets tqdm
 ```
 
-Additionally, you need to set a GitHub token as an environment variable named `GITHUB_TOKEN`. This token is required to authenticate with the GitHub API and avoid rate limits. You can create a personal access token on GitHub ([https://github.com/settings/tokens](https://github.com/settings/tokens)).  Once you have your token, set it as an environment variable in your terminal or system.
+Additionally, you need to set a GitHub token as an environment variable named `GITHUB_TOKEN`. This token is required to authenticate with the GitHub API and avoid rate limits. You can create a personal access token on GitHub ([https://github.com/settings/tokens](https://github.com/settings/tokens)).
 
 To run the script, navigate to the directory containing `create_dataset.py` in your terminal and execute:
 
-```bash
-python create_dataset.py
 ```
-
-This script will download issues from the `huggingface/transformers` repository, augment them with comments, and save the dataset to `transformers-issues-with-comments.jsonl`.
-
-**Note:**  Due to GitHub API rate limits, especially when fetching comments, the script may take a considerable amount of time to complete, and there might be pauses due to rate limit handling as indicated in the logs.
-
-### How to use the create_dataset.py script
-
-Before running the `create_dataset.py` script, ensure you have Python installed and the required libraries: `requests`, `pandas`, `datasets`, and `tqdm`. You can install these using pip:
-
-```bash
-pip install requests pandas datasets tqdm
-```
-
-Additionally, you need to set a GitHub token as an environment variable named `GITHUB_TOKEN`. This token is required to authenticate with the GitHub API and avoid rate limits. You can create a personal access token on GitHub ([https://github.com/settings/tokens](https://github.com/settings/tokens)).  Once you have your token, set it as an environment variable in your terminal or system.
-
-To run the script, navigate to the directory containing `create_dataset.py` in your terminal and execute:
-
-```bash
 python create_dataset.py
 ```
 
@@ -53,19 +33,19 @@ This script will download issues from the `huggingface/transformers` repository,
 
 To run the semantic search script, you need to have Python installed along with the required libraries (`datasets`, `transformers`, `pandas`, and `torch`). You can install these libraries using pip:
 
-```bash
+```
 pip install datasets transformers pandas torch
 ```
 
 Once you have the dependencies installed, you can run the script from your terminal using the following command:
 
-```bash
+```
 python semantic_search.py "your search question here"
 ```
 
 Replace `"your search question here"` with the question you want to search for in the issues. For example:
 
-```bash
+```
 python semantic_search.py "How to use transformers for text classification?"
 ```
 
